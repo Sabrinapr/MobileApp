@@ -21,13 +21,18 @@ body{
 div#container{
     width:100%;
 
-    border:3px dashed hotpink;
-    background-color:pink;
+    border:3px dashed red;
+    background-color: darkred;
 }
 header{
-width:92%;
+width:94.2%;
     padding:50px;
     background-color: blueviolet;
+}
+header img#applogo{
+    display:block;
+    margin:auto;
+    width:200px;
 }
 header h1{
     color:black; 
@@ -36,7 +41,7 @@ header h1{
 }
 div#content{
     width:100%;
-    background-color:deeppink;
+    background-color:darkred;
     
 }
 /*
