@@ -20,12 +20,11 @@ body{
 }
 div#container{
     width:100%;
-
     border:3px dashed red;
     background-color:darkred;
 }
 header{
-width:94.2%;
+    width:auto;
     padding:50px;
     background-color: blueviolet;
 }
@@ -36,6 +35,7 @@ header img#applogo{
 }
 header h1{
     color:black; 
+    text-align: center;
      font-family: 'Cinzel', serif;
     font-size: 4.5em;
 }
@@ -43,6 +43,9 @@ div#content{
     width:100%;
     background-color:darkred;
     
+}
+div#content h3{
+    text-align:center;
 }
 /*
 nav{
@@ -90,28 +93,8 @@ nav ul li a:hover{
 .active {
     background-color: #ffa20e
 }
-div#product_grp{
-    width:auto;
-    margin: auto;
-}
-figure.product{
-    width: 20%;
-    background-color:springgreen;
-    
-}
-figure.product img{
-    display:block;
-    width:auto;
-    margin:auto;
-}
-figure.product figcaption{
-    text-align: center;
-    color:black;
-    font-family: fantasy;
-    font-size: 24px;
-    
-}
 /*
+
 footer{
     position: absolute;
     bottom:0;
@@ -120,19 +103,57 @@ footer{
     height:50px;
     background-color: lightpink;
 }
-div.keepOpen{
-    clear: both;
-    
+*/
+div#product_grp{
+	max-width:60%;
+	min-width:20%;
+	margin:auto;
 }
 
-@media screen and (max-width: 600px){
-    div#container{
-        width:100%;
-    }
-    
-    nav ul li a{
-        float:none;
-        text-align:center;
-    }
+figure.product{
+	display:block;
+	float:left;
+	margin:10px 15px;
+	min-width:30%;
+	max-width:45%;
+	background-color: darkgreen;
+	border-radius:5%;
 }
-*/
+
+figure.product img{
+	display:block;
+	padding:10px 0;
+	width:80%;
+	margin:auto;
+}
+
+figure.product figcaption{
+	text-align: center;
+	color:white;
+	font-family: fantasy;
+	font-size:24px;
+}
+
+div.keepOpen{
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	figure.product{
+		float:none;
+		margin:10px auto;
+		min-width:50%;
+		max-width:100%;
+		background-color: darkgreen;
+		border-radius:5%;
+	}
+	figure.product figcaption{
+	text-align: center;
+	color:white;
+	font-family: fantasy;
+	font-size:12px;
+}
+
+}
+
+
